@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Crypto Bot/v1/coinview/config.py
