@@ -1,4 +1,5 @@
-import websocket, datetime, json
+import websocket, json
+from datetime import datetime
 
 
 
@@ -11,7 +12,6 @@ def on_close(ws):
     print('Closed connection')
 
 def on_message(ws, message):
-    global inTradeBool, TRADE_BUY_PRICE
     json_message = json.loads(message)
     #pprint.pprint(json_message)
     candle = json_message['k']
